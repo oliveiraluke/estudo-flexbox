@@ -1,0 +1,264 @@
+html
+{
+    /* paleta de cores */
+    --color00: #1A238D; 
+    --color01: #0F59C7; 
+    --color02: #458DD7; 
+    --color03: #FBBD96; 
+    --color04: #FF8E8D; 
+    --color-preto: #0D0D0D;
+    --color-branco: #FFFFFF;
+    --color-cinza: #b3b3b3;    
+    --color-cinza-claro: #EFEFF1;
+
+    font-size: 14px;
+}
+
+body
+{                     
+    background-color: var(--color-cinza-claro);  
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    font-family: 'Gotham', 'open sans', sans-serif;
+}
+
+*
+{                
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+section
+{
+    padding: 12vh 0;
+}
+
+.section-rosa
+{
+    background-color: var(--color03);
+}
+
+.group-title
+{
+    margin-bottom: 50px;
+}
+
+.group-button
+{
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+/* tipografia */
+
+h2
+{
+    color: var(--color01);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3
+{
+    color: var(--color-branco);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+h4
+{
+    color: var(--color01);
+    font-size: 1.15rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.icon
+{
+    background-color: var(--color04);
+    height: 45px;
+    width: 45px;
+    border-radius: 0px 30px 30px 30px;   
+}
+
+/* container flex */
+
+.container-flex
+{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* cards */
+
+.card
+{
+    width: 275px;
+    height: 200px;
+    margin: 7.5px 5px;
+    border: 0px;
+    border-radius: 15px; 
+    background-color: var(--color-branco);  
+    color: var(--color-preto);               
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+}   
+
+.card:hover
+{
+    box-shadow: 0px 3px 6px var(--color-cinza);
+}
+
+.card > img
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.card-0
+{ 
+    border-top: 10px solid var(--color00);
+}
+         
+.card-1 
+{ 
+    border-top: 10px solid var(--color01);
+}
+            
+.card-2
+{ 
+    border-top: 10px solid var(--color02);
+}
+            
+.card-3
+{ 
+    border-top: 10px solid var(--color03);
+}
+            
+.card-4
+{ 
+    border-top: 10px solid var(--color04);
+}
+
+/* botões */
+
+.btn
+{   
+    border: 2px solid var(--color-preto);    
+    margin: 5px;
+}   
+
+#btn-0
+{ 
+    border-color: var(--color00); 
+    color: var(--color00);
+}
+
+#btn-0:hover
+{
+    background-color: var(--color00); 
+    color: var(--color-branco);   
+}
+
+#btn-1 
+{ 
+    border-color: var(--color01); 
+    color: var(--color01);
+}
+
+#btn-1:hover
+{
+    background-color: var(--color01); 
+    color: var(--color-branco);   
+}
+
+#btn-2 
+{ 
+    border-color: var(--color02); 
+    color: var(--color02);
+}
+
+#btn-2:hover
+{
+    background-color: var(--color02); 
+    color: var(--color-branco);   
+}
+
+#btn-3 
+{ 
+    border-color: var(--color03);
+    color: var(--color03);
+}
+
+#btn-3:hover
+{
+    background-color: var(--color03); 
+    color: var(--color-branco);   
+}
+            
+#btn-4 
+{ 
+    border-color: var(--color04); 
+    color: var(--color04);
+}
+
+#btn-4:hover
+{
+    background-color: var(--color04); 
+    color: var(--color-branco);   
+}
+
+/* modal */
+
+.modal-content
+{
+    background-color: var(--color01);
+    border-radius: 0px 50px 50px 50px; 
+    border: 0px;
+    padding: 35px 25px 100px 25px;
+    color: var(--color-branco);
+}
+
+/*.modal-content img
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}*/
+
+.modal-content .conteudo
+{
+    margin: 25px 0px 10px 0px;
+}
+
+.modal-content .destaque
+{
+    color: var(--color03);
+    font-weight: 500;
+}
+
+.modal-content a
+{
+    background-color: var(--color04);
+    color: var(--color-branco);
+    border: 0px;
+    margin: 5px 0;
+    padding: 10px 15px;
+}
+
+.modal-content a:hover
+{
+    color: var(--color-branco);
+    opacity: 0.85; 
+}
