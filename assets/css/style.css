@@ -46,7 +46,7 @@ body
 
 section
 {
-    padding: 20vh 0;
+    padding: 18vh 0;
 }
 
 .section-branco
@@ -59,11 +59,13 @@ section
     background-color: var(--color01);
     color: var(--color-branco);
     text-align: center;
+    padding: 10vh 0;
 }
 
 .section-azul > .container-fluid >.row > .col-md-6 > h3
 {  
     border: 2px solid var(--color-branco);
+    background-color: transparent;
 }
 
 .section-azul > .container-fluid > .row > .col-md-6 > h4
@@ -76,14 +78,14 @@ section
     width: 90vw;
 }
 
-/*.row
+.row
 {
     margin: 2.5vh 0;
-}*/
+}
 
 .col
 {
-    padding: 2.5vh;
+    padding: 3vh;
 }
 
 .img-destaque
@@ -125,12 +127,12 @@ h2
 h3
 {
     border-radius: 0px 25px 25px 25px;    
-    background-color: var(--color01);
+    background-color: var(--color05);
     height: auto;
     width: max-content;
     padding: 2px 20px;    
-    color: var(--color-branco);
-    font-size: 2rem;
+    color: var(--color03);
+    font-size: 1.75rem;
     line-height: 3rem;
     font-weight: 500;
     margin: auto;    
@@ -138,12 +140,13 @@ h3
 
 h4
 {
-    color: var(--color01);
-    font-size: 1.15rem;
-    line-height: 2rem;
+    color: var(--color05);
+    font-size: 1.1rem;
+    line-height: 1.75rem;
     font-weight: 400;
+    font-style: italic;
     text-align: center;    
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 h5
@@ -162,8 +165,8 @@ h5
     margin-top: 7px;
     padding: 10px 20px;
     font-weight: 500;
-    float: left;
-    clear: both;
+    /*float: left;
+    clear: both;*/
 }
 
 .btn:hover
@@ -409,11 +412,11 @@ h5
 .item
 {
     background: var(--color-cinza-claro);
-    margin-right: 15px;    
+    margin-right: 12px;    
     width: auto;
     height: 530px;
     border: 0px;
-    border-radius: 15px;   
+    border-radius: 12px;   
     text-align: left;
     padding: 20px;
 }
@@ -438,3 +441,13 @@ h5
     width: 45px;
     border-radius: 0px 30px 30px 30px;   
 }*/
+
+/* footer */
+
+.bg-rodape
+{
+    height: 30vh;
+    padding: 0; 
+    z-index: 1;   
+    background-image: url('../img/background.jpg');
+}
