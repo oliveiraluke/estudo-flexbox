@@ -25,12 +25,12 @@ body
     font-family: 'Gotham', 'open sans', sans-serif;
 }
 
-*
+/**
 {                
     margin: 0%;
     padding: 0px;
     box-sizing: border-box;  
-}
+}*/
 
 /* navbar */
 
@@ -69,6 +69,27 @@ section
 .section-azul > .container-fluid > .row > .col-md-6 > h4
 {   
     color: var(--color-branco);
+}
+
+.container-fluid
+{
+    width: 90vw;
+}
+
+/*.row
+{
+    margin: 2.5vh 0;
+}*/
+
+.col
+{
+    padding: 2.5vh;
+}
+
+.img-destaque
+{
+    width: 400px;
+    height: auto;
 }
 
 /*
@@ -122,7 +143,7 @@ h4
     line-height: 2rem;
     font-weight: 400;
     text-align: center;    
-    margin: 15px 0px 20px 0px;  
+    margin-top: 15px;
 }
 
 h5
@@ -141,6 +162,8 @@ h5
     margin-top: 7px;
     padding: 10px 20px;
     font-weight: 500;
+    float: left;
+    clear: both;
 }
 
 .btn:hover
@@ -388,7 +411,7 @@ h5
     background: var(--color-cinza-claro);
     margin-right: 15px;    
     width: auto;
-    height: 500px;
+    height: 530px;
     border: 0px;
     border-radius: 15px;   
     text-align: left;
