@@ -1,3 +1,28 @@
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+/* troca de página */
+
+$('.novaaba').on('click', function (e) {
+    link = $(this).attr('href');   
+    window.open(link,"_blank");
+    return;
+});
+  
 /* botões */
 
 $('#btn-1').on('click', function (e) {
@@ -176,7 +201,7 @@ $('.card').on('click', function (e)
             break;        
     }
 
-    $('.modal-body > h3').html($titulo);
+    $('.modal-body > h5').html($titulo);
     $('.modal-body > .conteudo').html($conteudo);
     $('.modal-body > .destaque').html($destaque);
     $('.modal-body > a').html($botao+' <i class="fa fa-external-link" aria-hidden="true"></i>');
