@@ -42,7 +42,8 @@ section
 
 .section-azul
 {
-    background-color: var(--color02);
+    /*background-color: var(--color02);*/
+    background-image: url('../img/bg-bloco-hierarquia02.jpg');
     color: var(--color-branco);
     text-align: center;
     padding: 10vh 0;
@@ -207,7 +208,7 @@ ul
     height: 100vh;
     padding: 0; 
     z-index: 1;   
-    background-image: url('../img/intro.jpg');
+    background-image: url('../img/foto-intro.jpg');
 }
 
 .parallax 
@@ -273,7 +274,7 @@ ul
 .card.card-difer
 {  
     width: auto;
-    height: 530px;
+    height: 545px;
     margin-right: 12px;    
     background: var(--color-cinza-claro);     
     padding: 20px;
@@ -491,12 +492,37 @@ ul
 
 /* ---- footer ----- */
 
-.bg-rodape
+footer, .social
 {
-    height: 30vh;
+    margin: 0;
     padding: 0; 
+}
+
+.bg-social
+{
+    height: 50vh;
     z-index: 1;   
     background-image: url('../img/background.jpg');
+}
+
+.social h5
+{
+    text-shadow: 2px 2px 2px var(--color-preto);    
+    margin-bottom: 25px;
+}
+
+.social svg
+{
+    width: 40px;
+    height: auto;
+    margin: 0 15px;
+    fill: var(--color-branco);
+}
+
+.social svg:hover
+{
+    cursor: pointer;
+    fill: var(--color-roxo);
 }
 
 /* ---- utilitários ----- */

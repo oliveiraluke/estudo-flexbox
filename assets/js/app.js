@@ -1,7 +1,7 @@
 /* slider  */
 
 $('.owl-carousel').owlCarousel({
-    autoPlay: 5000, //Set AutoPlay to 5 seconds 
+    autoPlay: 10000, //Set AutoPlay to 5 seconds 
 	items: 4,
 	itemsDesktop: [1199,3],
 	itemsDesktopSmall: [979,3],
@@ -88,8 +88,8 @@ $('.pill').on('click', function (e)
             $link = 'educon.pucrs.br';           
             break;            
         case 'pill-b5':
-            $titulo = 'O Lanche universitário é um combo com preços especiais pensado para estudantes PUCRS';
-            $conteudo = 'Confira onde encontrar:<br/>• Espaço 32<br/>• Garten Bistro<br/>• Intervalo 50<br/>• Casa 5<br/>• Vila Olímpica<br/>• Delitzzi';
+            $titulo = 'Lanche universitário';
+            $conteudo = 'Um combo com preços especiais pensado para estudantes PUCRS. Veja onde encontrar: <br/>• Espaço 32<br/>• Garten Bistro<br/>• Intervalo 50<br/>• Casa 5<br/>• Vila Olímpica<br/>• Delitzzi';
             $destaque = '';
             $botao = 'Confira os Bares e Restaurantes participantes';
             $link = 'www.pucrs.br/coronavirus/servicos-do-campus';
