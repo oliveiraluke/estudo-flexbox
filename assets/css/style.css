@@ -492,17 +492,13 @@ ul
 
 /* ---- footer ----- */
 
-footer, .social
+footer
 {
     margin: 0;
     padding: 0; 
-}
-
-.bg-social
-{
-    height: 50vh;
-    z-index: 1;   
+    height: auto;
     background-image: url('../img/background.jpg');
+    z-index: 1;   
 }
 
 .social h5
@@ -523,6 +519,19 @@ footer, .social
 {
     cursor: pointer;
     fill: var(--color-roxo);
+}
+
+.logo
+{
+    width: 230px;
+    height: auto;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+.logo:hover
+{
+    opacity: 0.75; 
 }
 
 /* ---- utilitários ----- */
