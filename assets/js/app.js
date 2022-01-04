@@ -58,7 +58,7 @@ $('#card-b5').on('click', function (e) {
 $('.pill').on('click', function (e)
 {  
     switch($(this).attr('id')) 
-    {
+    { 
         case 'pill-b1':
             $titulo = 'Pacote Office 365';
             $conteudo = 'Disponível gratuitamente, incluindo diversas ferramentas que facilitam seus estudos e sua comunicação com colegas e professores. O pacote inclui Word, Excel, PowerPoint, Teams, OneNote e Outlook, entre outros. Além disso, contam individualmente com o OneDrive com 5 TB (terabytes) de armazenamento. Os programas podem ser usados de forma online ou instalados em até cinco computadores.';
@@ -162,7 +162,7 @@ $('.pill').on('click', function (e)
             $conteudo = 'Um ambiente incrível, com equipamentos de última geração que adaptam-seconforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você fazer uma experimentação de dez dias gratuitos no nosso ecossistema fitness equipado pela Technogym.';
             $destaque = 'Benefício disponível até 31 de julho de 2022.';
             $botao = 'Conheça a nova academia do Parque Esportivo';
-            $link = 'www.pucrs.br/academia/';           
+            $link = 'www.pucrs.br/academia';           
             break;        
     }
 
