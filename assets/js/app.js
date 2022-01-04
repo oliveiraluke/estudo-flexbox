@@ -1,7 +1,7 @@
 /* slider  */
 
 $('.owl-carousel').owlCarousel({
-    autoPlay: 10000, //Set AutoPlay to 5 seconds 
+    autoPlay: 10000, //Set AutoPlay to 10 seconds 
 	items: 4,
 	itemsDesktop: [1199,3],
 	itemsDesktopSmall: [979,3],
@@ -123,8 +123,8 @@ $('.pill').on('click', function (e)
             $link = 'www.pucrs.br/apoiodiscente/nucleo-de-apoio-psicossocial/';
             break;                   
         case 'pill-b10':
-            $titulo = 'Até 15% de desconto em exames selecionados';
-            $conteudo = 'No Hospital São Lucas da PUCRS, localizado dentro do Campus da Universidade. <br/><i>*Informações adicionais pelo agendamento de consultas no Hospital São Lucas da PUCRS.</i>';
+            $titulo = 'Até 15% de desconto em exames selecionados no Hospital São Lucas da PUCRS';
+            $conteudo = 'Localizado dentro do Campus da Universidade. <br/><i>*Informações adicionais pelo agendamento de consultas no Hospital São Lucas da PUCRS.</i>';
             $destaque = 'Desconto exclusivo.';
             $botao = 'Conheça a lista completa de exames com desconto';
             $link = 'www.hsl.pucrs.br';
@@ -156,7 +156,14 @@ $('.pill').on('click', function (e)
             $destaque = 'Benefício disponível durante todo o seu período de graduação.';
             $botao = 'Saiba mais sobre o espaço';
             $link = 'tecnopuc.pucrs.br';           
-            break;     
+            break;                  
+        case 'pill-b15':
+            $titulo = '10 dias de experimentação gratuita na nova academia do Parque Esportivo';
+            $conteudo = 'Um ambiente incrível, com equipamentos de última geração que adaptam-seconforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você fazer uma experimentação de dez dias gratuitos no nosso ecossistema fitness equipado pela Technogym.';
+            $destaque = 'Benefício disponível até 31 de julho de 2022.';
+            $botao = 'Conheça a nova academia do Parque Esportivo';
+            $link = 'www.pucrs.br/academia/';           
+            break;        
     }
 
     $('.modal-body > h5').html($titulo);
