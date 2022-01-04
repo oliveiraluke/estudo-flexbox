@@ -174,7 +174,7 @@ $('.card-difer').on('click', function (e)
     switch($(this).attr('id')) 
     {
         case 'card-d1':
-            $link = '';
+            $link = 'www.pucrs.br/certificacoes';
             break;
         case 'card-d2':
             $link = 'www.pucrs.br/gpg';
