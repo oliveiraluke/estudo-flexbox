@@ -130,7 +130,7 @@ $('.pill').on('click', function (e)
             break;                   
         case 'pill-b10':
             $titulo = 'Até 15% de desconto em exames selecionados no Hospital São Lucas da PUCRS';
-            $conteudo = 'Localizado dentro do Campus da Universidade. <br/><i>*Informações adicionais pelo agendamento de consultas no Hospital São Lucas da PUCRS.</i>';
+            $conteudo = 'Localizado dentro do Campus da Universidade.<br/><br/><i>*Informações adicionais pelo agendamento de consultas no Hospital São Lucas da PUCRS.</i>';
             $destaque = 'Desconto exclusivo.';
             $botao = 'Conheça a lista completa de exames com desconto';
             $link = 'www.hsl.pucrs.br';
@@ -165,7 +165,7 @@ $('.pill').on('click', function (e)
             break;                  
         case 'pill-b15':
             $titulo = '10 dias de experimentação gratuita na academia do Parque Esportivo';
-            $conteudo = 'Um ambiente incrível, com equipamentos de última geração que adaptam-se conforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você pode fazer uma experimentação de dez dias gratuitos no nosso ecossistema fitness equipado pela Technogym.<br/><i>* Para utilização do benefício, é obrigatório o agendamento prévio nos canais do Parque.</i><br/>admparqueesportivo@pucrs.br | 3353-4903 | 3353-8329';
+            $conteudo = 'Um ambiente incrível, com equipamentos de última geração da Technogym que adaptam-se conforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você pode experimentar modalidades como futebol adulto masculino, group cycle, skillrow, omnia class, mobilidade, hiit, ritmos, corrida orientada e yoga (exceto as atividades aquáticas).<br/><br/><i>* Para utilização do benefício, é obrigatório o agendamento prévio nos canais do Parque.</i><br/>admparqueesportivo@pucrs.br | 3353-4903 | 3353-8329';
             $destaque = 'Benefício disponível até 31 de julho de 2022.';
             $botao = 'Conheça a academia do Parque Esportivo';
             $link = 'www.pucrs.br/academia';           
@@ -214,6 +214,13 @@ $('.card-difer').on('click', function (e)
 });
 
 
+/* ---- INITIALIZE AOS ---- */
+$(document).ready(function()
+{
+    AOS.init();
+});
+
+
 /* ---- slider ---- */
 
 $('.owl-carousel').owlCarousel({
@@ -222,11 +229,4 @@ $('.owl-carousel').owlCarousel({
 	itemsDesktop: [1199,3],
 	itemsDesktopSmall: [979,3]
 	//navigation: true,   
-});
-
-
-/* ---- INITIALIZE AOS ---- */
-$(document).ready(function()
-{
-    AOS.init();
 });
