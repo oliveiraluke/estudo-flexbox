@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+  <defs>
+    <filter id="Elipse_13" x="0" y="0" width="118" height="118" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_402" data-name="Retângulo 402" width="32.34" height="18.436" transform="translate(0 0)" fill="#ff8e8d"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_2505" data-name="Grupo 2505" transform="translate(8336 -1736) rotate(90)">
+    <g transform="matrix(0, -1, 1, 0, 1736, 8336)" filter="url(#Elipse_13)">
+      <circle id="Elipse_13-2" data-name="Elipse 13" cx="41" cy="41" r="41" transform="translate(100 12) rotate(90)" fill="#fff"/>
+    </g>
+    <g id="Grupo_2402" data-name="Grupo 2402" transform="translate(1798.178 8261.129) rotate(90)" clip-path="url(#clip-path)">
+      <path id="Caminho_289" data-name="Caminho 289" d="M32.34,15.844a3.318,3.318,0,0,0-1.052-1.675Q24.592,7.49,17.911.8A2.3,2.3,0,0,0,15.443.121,2.324,2.324,0,0,0,14.5.73Q7.62,7.606.745,14.486A2.245,2.245,0,0,0,1.309,18.2,2.144,2.144,0,0,0,3.6,17.977a3.785,3.785,0,0,0,.47-.42Q9.991,11.641,15.9,5.717c.205-.206.3-.235.526-.011q5.938,5.963,11.894,11.909a2.275,2.275,0,0,0,2.433.693,2.144,2.144,0,0,0,1.47-1.477c.037-.119.077-.237.115-.355Z" transform="translate(0 0)" fill="#ff8e8d"/>
+    </g>
+  </g>
+</svg>

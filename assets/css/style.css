@@ -17,6 +17,8 @@ html
     --color-cinza-claro: #EFEFF1;
 
     font-size: 14px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body
@@ -43,7 +45,7 @@ section
 .section-azul
 {
     /*background-color: var(--color02);*/
-    background-image: url('../img/bg-bloco-hierarquia02.jpg');
+    background-image: url('http://www.pucrs.br/wp-content/uploads/2022/01/bg-bloco-hierarquia02.jpg');
     color: var(--color-branco);
     text-align: center;
     padding: 10vh 0;
@@ -196,24 +198,40 @@ ul
 .navbar
 {
     background-color: var(--color02);
-    height: 12vh;
-    /*box-shadow: 0px 3px 6px #00000029;*/
+    height: 10vh;
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
+}
+
+.navbar img
+{
+    height: 4.5vh;
+    width: auto;
+    margin: 0;
+}
+
+.navbar span
+{
+    color: var(--color-branco);
+    font-size: 1.3rem;
+    margin-left: 10px;
+    font-weight: 500;
 }
 
 /* ---- intro typewrite ---- */
 
 .intro
 {
-    height: 100vh;
-    padding: 0; 
+    height: 90vh;
     z-index: 1;   
-    background-image: url('../img/foto-intro.jpg');
+    background-image: url('http://www.pucrs.br/wp-content/uploads/2022/01/foto-intro.jpg');
+    text-align: center;
 }
 
 .parallax 
 {
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -253,6 +271,15 @@ ul
 {
     text-decoration: none;
     cursor: text;
+}
+
+#button-intro
+{
+    height: 80px;
+    width: auto;
+    position: absolute;
+    bottom: 25px;
+    margin-left: -25px;
 }
 
 /* ---- cards - benefícios e diferenciais ---- */
@@ -497,7 +524,7 @@ footer
     margin: 0;
     padding: 0; 
     height: auto;
-    background-image: url('../img/background.jpg');
+    background-image: url('http://www.pucrs.br/wp-content/uploads/2022/01/background.jpg');
     z-index: 1;   
 }
 

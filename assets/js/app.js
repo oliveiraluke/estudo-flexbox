@@ -1,12 +1,4 @@
-/* slider  */
-
-$('.owl-carousel').owlCarousel({
-    autoPlay: 10000, //Set AutoPlay to 10 seconds 
-	items: 4,
-	itemsDesktop: [1199,3],
-	itemsDesktopSmall: [979,3],
-	//navigation: true,   
-});
+/* ---- geral ---- */
 
 /* troca de página */
 
@@ -15,10 +7,20 @@ $('.novaaba').on('click', function (e) {
     window.open(link,"_blank");
     return;
 });
+
+/* function scroll */
+
+function goToByScroll() 
+{
+    $('html,body').animate({
+        scrollTop: $("#pills").offset().top
+    }, 'fast');
+}
   
 /* cards - benefícios */
 
-$('#card-b1').on('click', function (e) {
+$('#card-b1').on('click', function (e) {    
+    goToByScroll();
     $('.item-b1').show();
     $('.item-b2').hide();
     $('.item-b3').hide();
@@ -26,6 +28,7 @@ $('#card-b1').on('click', function (e) {
 });
 
 $('#card-b2').on('click', function (e) {
+    goToByScroll();
     $('.item-b2').show();
     $('.item-b1').hide();
     $('.item-b3').hide();
@@ -33,6 +36,7 @@ $('#card-b2').on('click', function (e) {
 });
 
 $('#card-b3').on('click', function (e) { 
+    goToByScroll();
     $('.item-b3').show();
     $('.item-b1').hide();
     $('.item-b2').hide();
@@ -40,6 +44,7 @@ $('#card-b3').on('click', function (e) {
 });
 
 $('#card-b4').on('click', function (e) { 
+    goToByScroll();
     $('.item-b4').show();
     $('.item-b1').hide();
     $('.item-b2').hide();
@@ -47,6 +52,7 @@ $('#card-b4').on('click', function (e) {
 });
 
 $('#card-b5').on('click', function (e) {          
+    goToByScroll();
     $('.item-b1').show();
     $('.item-b2').show();
     $('.item-b3').show(); 
@@ -158,10 +164,10 @@ $('.pill').on('click', function (e)
             $link = 'tecnopuc.pucrs.br';           
             break;                  
         case 'pill-b15':
-            $titulo = '10 dias de experimentação gratuita na nova academia do Parque Esportivo';
-            $conteudo = 'Um ambiente incrível, com equipamentos de última geração que adaptam-seconforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você fazer uma experimentação de dez dias gratuitos no nosso ecossistema fitness equipado pela Technogym.';
+            $titulo = '10 dias de experimentação gratuita na academia do Parque Esportivo';
+            $conteudo = 'Um ambiente incrível, com equipamentos de última geração que adaptam-se conforme o seu treino personalizado pelos nossos profissionais. Com esse benefício, você pode fazer uma experimentação de dez dias gratuitos no nosso ecossistema fitness equipado pela Technogym.<br/><i>* Para utilização do benefício, é obrigatório o agendamento prévio nos canais do Parque.</i><br/>admparqueesportivo@pucrs.br | 3353-4903 | 3353-8329';
             $destaque = 'Benefício disponível até 31 de julho de 2022.';
-            $botao = 'Conheça a nova academia do Parque Esportivo';
+            $botao = 'Conheça a academia do Parque Esportivo';
             $link = 'www.pucrs.br/academia';           
             break;        
     }
@@ -205,4 +211,22 @@ $('.card-difer').on('click', function (e)
 
     
     window.open('http://'+$link, '_blank');
+});
+
+
+/* ---- slider ---- */
+
+$('.owl-carousel').owlCarousel({
+    autoPlay: 10000, //Set AutoPlay to 10 seconds 
+	items: 4,
+	itemsDesktop: [1199,3],
+	itemsDesktopSmall: [979,3]
+	//navigation: true,   
+});
+
+
+/* ---- INITIALIZE AOS ---- */
+$(document).ready(function()
+{
+    AOS.init();
 });
