@@ -281,10 +281,10 @@ ul
 .box-type .title-mob
 {
     color: var(--color-branco);
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    margin-top: 15px;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 #button-intro
