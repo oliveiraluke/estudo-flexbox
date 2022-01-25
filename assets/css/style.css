@@ -278,9 +278,13 @@ ul
     cursor: text;
 }
 
-.box-type .span-mob
+.box-type .title-mob
 {
-    font-size: 10vmin;
+    color: var(--color-branco);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 #button-intro
