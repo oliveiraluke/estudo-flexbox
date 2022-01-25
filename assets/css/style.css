@@ -100,10 +100,10 @@ h3
     border-radius: 0px 25px 25px 25px;    
     background-color: var(--color-roxo);
     height: auto;
-    width: max-content;
+    width: fit-content;
     padding: 5px 25px;    
     color: var(--color04);
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 500;
     margin: auto;    
@@ -161,6 +161,8 @@ ul
     margin-top: 7px;
     padding: 10px 20px;
     font-weight: 500;
+    height: max-content;
+    width: fit-content;
     /*float: left;
     clear: both;*/
 }
@@ -259,11 +261,14 @@ ul
 {
     border: 5px solid var(--color-branco); 
     border-radius: 0px 30px 30px 30px; 
-    height: 90px;
-    width: 120px;
+    /*height: 90px;
+    width: 120px;*/
+    height: 14vmin;
+    width: 18vmin;
     margin-right: 12px;
     text-align: center;
-    font-size: 4.5rem;
+    /*font-size: 4.5rem;*/
+    font-size: 10vmin;
     float: left;
 }
 
@@ -271,6 +276,11 @@ ul
 {
     text-decoration: none;
     cursor: text;
+}
+
+.box-type .span-mob
+{
+    font-size: 10vmin;
 }
 
 #button-intro
@@ -437,7 +447,8 @@ ul
 .pill
 {
     width: 375px;
-    height: 80px;
+    min-height: 80px;
+    max-height: max-content;
     margin: 7.5px 5px;
     border: 0px;
     border-radius: 50px; 
@@ -499,6 +510,15 @@ ul
     font-weight: 500;
 }
 
+#btn-close
+{
+    color: var(--color-branco);
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
 /* ---- alert ---- */
 
 .alert.alert-grey
@@ -536,9 +556,9 @@ footer
 
 .social svg
 {
-    width: 40px;
+    width: 7vmin;
     height: auto;
-    margin: 0 15px;
+    margin: 3vmin;
     fill: var(--color-branco);
 }
 
@@ -565,7 +585,7 @@ footer
 
 .img-destaque
 {
-    width: 400px;
+    max-width: 85%;
     height: auto;
 }
 

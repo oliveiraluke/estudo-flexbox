@@ -12,6 +12,9 @@
             gtag('config', 'UA-43503103-56');
         </script>
 
+        <!-- Google Tag Manager --> 
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PFJJ5VM');</script>
+
         <!-- meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
@@ -32,6 +35,9 @@
     </head>
     <body>
 
+        <!-- Google Tag Manager (noscript) --> 
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFJJ5VM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+    
         <!-- header -->
         <header> 
             <nav class="navbar">
@@ -55,7 +61,7 @@
                 </div>
             </section>
 
-            <div class="box-type">             
+            <div class="box-type d-none d-sm-block">             
                 <h2>Um novo semestre pra você se</h2>     
                 <h1>
                     <div class="icon">re</div>       
@@ -64,6 +70,18 @@
                     </a>
                 </h1>
             </div>
+
+            <!-- mobile -->
+            <div class="box-type d-block d-sm-none">             
+                <h5>Um novo semestre pra você se</h5>  
+                <span class="span-mob align-middle">  
+                    <div class="icon">re</div>        
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "encontrar", "conectar", "descobrir" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </span>
+            </div>
+            
 
             <!-- modelo de ensino -->
             <section id="modelo">
@@ -75,7 +93,7 @@
                         </div> 
                     </div> 
                     <div class="row">
-                        <div class="col col-md-5" data-aos="fade-right" data-aos-duration="1000"> 
+                        <div class="col col-md-5 col-12" data-aos="fade-right" data-aos-duration="1000"> 
                             <img src="http://www.pucrs.br/wp-content/uploads/2022/01/foto-ensino.png" class="img-destaque" title="modelo de ensino"/>
                         </div>
                         <div class="col col-md-7 align-middle" data-aos="fade-left" data-aos-duration="1000">
@@ -129,10 +147,10 @@
                         <div class="col col-md-7 align-middle" data-aos="fade-right" data-aos-duration="1000">
                             <p>Para quem já viveu tudo que a PUCRS pode oferecer, <b>é hora de voltar com tudo</b>. Para quem estava em uma relação remota com a gente, <b>é hora de curtir plenamente essa experiência</b>.</p>
                             <p>E o primeiro passo para isso é <b>fazer a sua rematrícula</b>.</p>
-                            <button type="button" class="btn btn-primario novaaba" href="https://www.pucrs.br/soupucrs-aluno/">Confira a escala de rematrículas <i class="fa fa-external-link" aria-hidden="true"></i></button>  
-                            <button type="button" class="btn btn-secundario novaaba" href="https://matricula.pucrs.br/#/login">Faça seu planejamento de matrícula <i class="fa fa-external-link" aria-hidden="true"></i></button>  
+                            <button type="button" class="btn btn-secundario novaaba" href="https://www.pucrs.br/soupucrs-aluno/">Confira a escala de rematrículas <i class="fa fa-external-link" aria-hidden="true"></i></button>  
+                            <button type="button" class="btn btn-primario novaaba" href="https://matricula.pucrs.br/#/login">Faça sua rematrícula <i class="fa fa-external-link" aria-hidden="true"></i></button>  
                         </div>
-                        <div class="col col-md-5 align-right" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="col col-md-5 col-12 align-right" data-aos="fade-left" data-aos-duration="1000">
                             <img src="http://www.pucrs.br/wp-content/uploads/2022/01/foto-rematricula.png" class="img-destaque" title="rematrículas"/>
                         </div>
                     </div>
@@ -337,13 +355,14 @@
             <!-- Modal template -->
             <div class="modal fade" id="benefModal" tabindex="-1" aria-labelledby="benefModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
+                    <button type="button" id="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
                     <div class="modal-content">
                         <div class="modal-body">
                             <!--<img src="assets/img/icon.svg"/>-->
                             <h5>titulo</h5>
                             <p class="conteudo">texto</p>
                             <p class="destaque">destaque</p>
-                            <a class="btn btn-primario" target="_BLANK">texto botão</a>
+                            <a class="btn btn-primario" target="_BLANK">texto botão</a>                            
                         </div>
                     </div>
                 </div>
@@ -356,7 +375,7 @@
             <section>
                 <div class="container-fluid">	
                     <div class="row">               
-                        <div class="col col-md-12 social">
+                        <div class="col col-12 social">
                             <h5 class="align-center">Nos acompanhe nas redes sociais</h5>
                             <div class="align-center">
                                 <a href="https://www.facebook.com/pucrs" target="_BLANK" class="align-middle" title="Facebook" alt="Facebook">
